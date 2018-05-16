@@ -1,0 +1,9 @@
+git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/workshop-commit
+git clone https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate.git 
+cp -R ./Continuous-Integration-and-Continuous-Delivery-with-Fargate/* ./workshop-commit
+rm -rf Continuous-Integration-and-Continuous-Delivery-with-Fargate
+cd workshop-commit
+rm -rf images
+git add .
+git commit -m “workshop-bash”
+git push
