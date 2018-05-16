@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - sudo pip install nose
+      - sudo pip install flask
+  build:
+    commands:
+      - nosetests app.py
