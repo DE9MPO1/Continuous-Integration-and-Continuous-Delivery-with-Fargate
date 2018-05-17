@@ -17,6 +17,8 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 
 
+
+
 ## Lab tutorial
 #### Create a repository with AWS CodeCommit
 1.1. 	Open AWS Manage Console and Sign in.
@@ -63,10 +65,10 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 1.17. 	Copy the follow command and paste to console.
 
-	git config --global credential.helper '!aws codecommit credential-helper $@'
-	git config --global credential.UseHttpPath true
-	git clone https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate.git
-	. Continuous-Integration-and-Continuous-Delivery-with-Fargate/RunFirst.sh
+	$ git config --global credential.helper '!aws codecommit credential-helper $@'
+	$ git config --global credential.UseHttpPath true
+	$ git clone https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate.git
+	$ . Continuous-Integration-and-Continuous-Delivery-with-Fargate/RunFirst.sh
 
 1.19. 	If you run successful, you will see a folder name **workshop-codecommit** at left navigation panel.
 
