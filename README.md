@@ -151,7 +151,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 1.52. 	Click **Create**.
 
-1.53. 	Go back to Cloud9 IDE to replace the Container name.
+1.53. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder, and replace the Container name.
 
 ![13.png](/images/13.png)
 
