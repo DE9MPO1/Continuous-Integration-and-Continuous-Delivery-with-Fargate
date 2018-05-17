@@ -15,8 +15,6 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 ## Prerequisites
 1. Sign-in a AWS account, and make sure you have select N.Virginia region.
 
-2. Download the source file from github.
-
 
 
 ## Lab tutorial
