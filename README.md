@@ -121,7 +121,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 ![11.png](/images/11.png)
 
-1.39. 	Go back to Cloud9 IDE to replace the Repository URI.
+1.39. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder and replace the Repository URI.
 
 ![12.png](/images/12.png)
 
