@@ -48,7 +48,7 @@ Service With Fargate
 
 1.20. 	Type **workshop-container** as Container name.
 
-1.21. 	Paste the **hello-world** into Image field.
+1.21. 	Paste the **httpd** into Image field.
 
 1.22. 	At the Port mappings part, Type **80** as Container port.
 
@@ -94,48 +94,55 @@ Service With Fargate
 
 1.39. 	Select **Create a new security group**.
 
-1.48. 	Type **workshop-ALB-SG** as Security group name.
+1.40. 	Type **workshop-ALB-SG** as Security group name.
 
-1.49. 	At Type part, Select **HTTP**.
+1.41. 	At Type part, Select **HTTP**.
 
-1.50. 	At Source part, Select **Anywhere**.
+1.42. 	At Source part, Select **Anywhere**.
 
-1.51. 	Click **Next: Configure Routing**.
+1.43. 	Click **Next: Configure Routing**.
 
-1.52. 	Type **workshop-TG** as the name.
+1.44. 	Type **workshop-TG** as the name.
 
-1.53. 	At the Target type, select **ip**.
+1.45. 	At the Target type, select **ip**.
 
-1.54. 	Click **Next: Register Target**.
+1.46. 	Click **Next: Register Target**.
 
-1.55. 	Click **Next: Review**.
+1.47. 	Click **Next: Review**.
 
-1.56. 	Click **Create**.
+1.48. 	Click **Create**.
 
-1.57. 	When it created successfully, click **Close**.
+1.49. 	When it created successfully, click **Close**.
 
-1.58. 	Back to ECS create service page.
+1.50. 	Back to ECS create service page.
 
-1.59. 	Click **Reload**.
+1.51. 	Click **Reload**.
 
 ![18.png](/ECS-100-Service_with_Fargate/images/18.png)
 
-1.60. 	Select **workshop-ALB** as Load balancer name.
+1.52. 	Select **workshop-ALB** as Load balancer name.
 
-1.61. 	Under Container to load balance, click **Add to load balancer**.
+1.53. 	Under Container to load balance, click **Add to load balancer**.
 
-1.62. 	At the Target group name, select **workshop-TG**.
+1.54. 	At the Target group name, select **workshop-TG**.
 
 ![19.png](/ECS-100-Service_with_Fargate/images/19.png)
 
-1.63. 	Click **Next step**.
+1.55. 	Click **Next step**.
 
-1.64. 	Let option default, click **Next step**.
+1.56. 	Let option default, click **Next step**.
 
-1.65. 	Click **Create Service**.
+1.57. 	Click **Create Service**.
 
-1.66. 	When it created Successfully, click **View Service**, and you can do next step.
+1.58. 	When it created Successfully, click **View Service**, and you can do next step.
 
+#### Verify the Service
+
+2.1. Go to EC2 page, and click **Load Balancers**, then select the load balancer you created.
+
+2.2. Copy the **DNS**, and paste to browser URL, and click **Enter**.
+
+2.3. If the service created successfully, you will see **It works!**.
 
 
 
