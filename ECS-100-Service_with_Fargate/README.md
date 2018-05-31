@@ -135,3 +135,17 @@ Service With Fargate
 1.65. 	Click **Create Service**.
 
 1.66. 	When it created Successfully, click **View Service**, and you can do next step.
+
+
+
+
+
+## Conclusion
+
+Congratulations! You now have learned how to:
+
+* Create **Amazon ECS** using **Fargate** type.
+
+
+
+
