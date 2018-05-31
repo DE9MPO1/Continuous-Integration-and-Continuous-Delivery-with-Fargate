@@ -12,7 +12,7 @@ Service With Fargate
 
 1.4. 	If you see this page, it means that you can do next.
 
-![9.png](/images/9.png)
+![9.png](/ECS-100-Service_with_Fargate/images/9.png)
 
 1.5. 	Click **Create Clusters**.
 
@@ -30,7 +30,7 @@ Service With Fargate
 
 1.12. 	If you see the cluster’s status is **ACTIVE**, you can do next step.
 
-![10.png](/images/10.png)
+![10.png](/ECS-100-Service_with_Fargate/images/10.png)
 
 1.13. 	Back to ECS page, click **Task Definitions** at left panel.
 
@@ -58,7 +58,7 @@ Service With Fargate
 
 1.25. 	Back to ECS page, click **Action**, and Select **Create Service**.
 
-![14.png](/images/14.png)
+![14.png](/ECS-100-Service_with_Fargate/images/14.png)
 
 1.26. 	Choose **Fargate** as Launch type.
 
@@ -68,7 +68,7 @@ Service With Fargate
 
 1.29. 	Click **Next step**.
 
-![15.png](/images/15.png)
+![15.png](/ECS-100-Service_with_Fargate/images/15.png)
 
 1.30. 	Select VPC which you create previously.
 
@@ -78,7 +78,7 @@ Service With Fargate
 
 1.33. 	You will see a warning which mean you need to create ALB, click **EC2 Console**.
 
-![16.png](/images/16.png)
+![16.png](/ECS-100-Service_with_Fargate/images/16.png)
 
 1.34. 	Select **Create** under Application Load Balancer.
 
@@ -86,7 +86,7 @@ Service With Fargate
 
 1.36. 	Under Availability Zones, choose the VPC you created previously, and select both.
 
-![17.png](/images/17.png)
+![17.png](/ECS-100-Service_with_Fargate/images/17.png)
 
 1.37. 	Click **Next: Configure Security Settings**.
 
@@ -118,7 +118,7 @@ Service With Fargate
 
 1.59. 	Click **Reload**.
 
-![18.png](/images/18.png)
+![18.png](/ECS-100-Service_with_Fargate/images/18.png)
 
 1.60. 	Select **workshop-ALB** as Load balancer name.
 
@@ -126,7 +126,7 @@ Service With Fargate
 
 1.62. 	At the Target group name, select **workshop-TG**.
 
-![19.png](/images/19.png)
+![19.png](/ECS-100-Service_with_Fargate/images/19.png)
 
 1.63. 	Click **Next step**.
 
