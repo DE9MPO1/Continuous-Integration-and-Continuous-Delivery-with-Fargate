@@ -38,7 +38,7 @@ Service With Fargate
 
 1.15. 	Select **Fargate**, and click **Next step**.
 
-1.16. 	Type **sample-task** as the Task Definition Name.
+1.16. 	Type **workshop-task** as the Task Definition Name.
 
 1.17. 	Select **None** as Task Role
 

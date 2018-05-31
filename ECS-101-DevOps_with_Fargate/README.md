@@ -92,97 +92,17 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 ![12.png](/ECS-101-DevOps_with_Fargate/images/12.png)
 
-4.20. 	Save the file.
-
-4.21. 	Back to ECS page, click **Task Definitions** at left panel.
-
-4.22.   
-
 4.33. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder, and replace the Container name.
 
 ![13.png](/ECS-101-DevOps_with_Fargate/images/13.png)
 
+4.20. 	Save the file.
+
 4.34. 	Use **Git command** push code to CodeCommit.
-
-4.35. 	Back to ECS page, click **Action**, and Select **Create Service**.
-
-![14.png](/ECS-101-DevOps_with_Fargate/images/14.png)
-
-4.36. 	Choose **Fargate** as Launch type.
-
-4.37. 	Type **workshop-service** as the Service name.
-
-4.38. 	In Number of tasks, enter **1**.
-
-4.39. 	Click **Next step**.
-
-![15.png](/ECS-101-DevOps_with_Fargate/images/15.png)
-
-4.40. 	Select VPC which you create previously.
-
-4.41. 	At Subnets, select all two subnets.
-
-4.42. 	Under Load balancing, choose **Application Load Balancer**.
-
-4.43. 	You will see a warning which mean you need to create ALB, click **EC2 Console**.
-
-![16.png](/ECS-101-DevOps_with_Fargate/images/16.png)
-
-4.44. 	Select **Create** under Application Load Balancer.
-
-4.45. 	Type **workshop-ALB** as Name.
-
-4.46. 	Under Availability Zones, choose the VPC you created previously, and select both.
-
-![17.png](/ECS-101-DevOps_with_Fargate/images/17.png)
-
-4.47. 	Click **Next: Configure Security Settings**.
-
-4.48. 	Click **Next: Configure Security Groups**.
-
-4.49. 	Select **Create a new security group**.
-
-4.50. 	Type **workshop-ALB-SG** as Security group name.
-
-4.51. 	At Type part, Select **HTTP**.
-
-4.52. 	At Source part, Select **Anywhere**.
-
-4.53. 	Click **Next: Configure Routing**.
-
-4.54. 	Type **workshop-TG** as the name.
-
-4.55. 	At the Target type, select **ip**.
-
-4.56. 	Click **Next: Register Target**.
-
-4.57. 	Click **Next: Review**.
-
-4.58. 	Click **Create**.
-
-4.59. 	When it created successfully, click **Close**.
-
-4.60. 	Back to ECS create service page.
-
-4.61. 	Click **Reload**.
-
-![18.png](/ECS-101-DevOps_with_Fargate/images/18.png)
-
-4.62. 	Select **workshop-ALB** as Load balancer name.
-
-4.63. 	Under Container to load balance, click **Add to load balancer**.
-
-4.64. 	At the Target group name, select **workshop-TG**.
-
-![19.png](/ECS-101-DevOps_with_Fargate/images/19.png)
-
-4.65. 	Click **Next step**.
-
-4.66. 	Let option default, click **Next step**.
-
-4.67. 	Click **Create Service**.
-
-4.68. 	When it created Successfully, click **View Service**, and you can do next step.
+		
+	$ git add .
+	$ git commit -m "First commit"
+	$ git push
 
 
 ### Create a Pipeline Use AWS CodePipeline
