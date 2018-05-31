@@ -15,7 +15,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 
 ## Lab tutorial
-#### Create a repository with AWS CodeCommit
+### Create a repository with AWS CodeCommit
 1.1. 	Open AWS Manage Console and Sign in.
 
 1.2. 	On the Service Menu, choose **CodeCommit** service under Developer Tools.
@@ -35,7 +35,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 ![2.png](/ECS-101-DevOps_with_Fargate/images/2.png)
 
 
-#### Create a cloud-based IDE with AWS Cloud9.
+### Create a cloud-based IDE with AWS Cloud9.
 
 2.1. 	On the Service Menu, choose **Cloud9** service under Developer Tools.
 
@@ -52,7 +52,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 2.7. 	Now you will see the Cloud9 IDE is open, wait until it done.
 
 
-#### Integrate Cloud9 With CodeCommit and Push First Code
+### Integrate Cloud9 With CodeCommit and Push First Code
 
 3.1. 	At the bottom of page, you will see the console tab.
 
@@ -63,7 +63,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 	$ git config --global credential.helper '!aws codecommit credential-helper $@'
 	$ git config --global credential.UseHttpPath true
 	$ git clone https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate.git
-	$ . Continuous-Integration-and-Continuous-Delivery-with-Fargate/RunFirst.sh
+	$ . Continuous-Integration-and-Continuous-Delivery-with-Fargate/ECS-101-DevOps_with_Fargate/RunFirst.sh
 
 3.3. 	If you run successful, you will see a folder name **workshop-codecommit** at left navigation panel.
 
@@ -72,35 +72,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 3.4. 	Go to **AWS CodeCommit** page, and you will see source code are already push by bash script.
 
 
-#### Create a Cluster, Task Definition, and Service Using Fargate
-
-4.1. 	On the Service Menu, choose **Elastic Container Service** under Compute.
-
-4.2. 	Click **Get started**.
-
-4.3. 	Click **Cancel**.
-
-4.4. 	If you see this page, it means that you can do next.
-
-![9.png](/ECS-101-DevOps_with_Fargate/images/9.png)
-
-4.5. 	Click **Create Clusters**.
-
-4.6. 	Select **Networking only**, and click **Next step**.
-
-4.7. 	Type **workshop-ecs** as the Cluster name.
-
-4.8. 	Click **Create VPC**.
-
-4.9. 	Create your own CIDR which not affect others VPC.
-
-4.10. 	Click **Create**.
-
-4.11. 	When it created successfully, click **View Clusters**.
-
-4.12. 	If you see the cluster’s status is **ACTIVE**, you can do next step.
-
-![10.png](/ECS-101-DevOps_with_Fargate/images/10.png)
+### Create a ECR Repository
 
 4.13. 	Click **Repositories** under Amazon ECR at left panel.
 
@@ -120,31 +92,11 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 ![12.png](/ECS-101-DevOps_with_Fargate/images/12.png)
 
-4.20. 	Use **Git command** push code to CodeCommit.
+4.20. 	Save the file.
 
 4.21. 	Back to ECS page, click **Task Definitions** at left panel.
 
-4.22. 	Click **Create new Task Definition**.
-
-4.23. 	Select **Fargate**, and click **Next step**.
-
-4.24. 	Type **workshop-task** as the Task Definition Name.
-
-4.25. 	Select **None** as Task Role
-
-4.26. 	Under the Task Size, select **0.5GB** as Task memory, **0.25vCPU** as Task CPU.
-
-4.27. 	Click **Add container**.
-
-4.28. 	Type **workshop-container** as Container name.
-
-4.29. 	Paste the **Repository URI** you noted previously into Image field.
-
-4.30. 	At the Port mappings part, Type **80** as Container port.
-
-4.31. 	Click **Add**.
-
-4.32. 	Click **Create**.
+4.22.   
 
 4.33. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder, and replace the Container name.
 
@@ -233,7 +185,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 4.68. 	When it created Successfully, click **View Service**, and you can do next step.
 
 
-#### Create a Pipeline Use AWS CodePipeline
+### Create a Pipeline Use AWS CodePipeline
 
 5.1. 	In the **AWS Management Console**, on the **service** menu, click **CodePipeline**.
 
