@@ -74,31 +74,33 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 ### Create a ECR Repository
 
-4.13. 	Click **Repositories** under Amazon ECR at left panel.
+4.1.    Back to ECS service page.
 
-4.14. 	If you are first created, click **Get started**, else, click **Create repository**.
+4.2. 	Click **Repositories** under Amazon ECR at left panel.
 
-4.15. 	Type **workshop-ecr** as the Repository name.
+4.3. 	If you are first created, click **Get started**, else, click **Create repository**.
 
-4.16. 	Click **Next step**.
+4.4. 	Type **workshop-ecr** as the Repository name.
 
-4.17. 	Click **Done**.
+4.5. 	Click **Next step**.
 
-4.18. 	Note the **Repository** URI and copy it.
+4.6. 	Click **Done**.
+
+4.7. 	Note the **Repository** URI and copy it.
 
 ![11.png](/ECS-101-DevOps_with_Fargate/images/11.png)
 
-4.19. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder and replace the Repository URI.
+4.8. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder and replace the Repository URI.
 
 ![12.png](/ECS-101-DevOps_with_Fargate/images/12.png)
 
-4.33. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder, and replace the Container name.
+4.9. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder, and replace the Container name to **workshop-container**.
 
 ![13.png](/ECS-101-DevOps_with_Fargate/images/13.png)
 
-4.20. 	Save the file.
+4.10. 	Save the file.
 
-4.34. 	Use **Git command** push code to CodeCommit.
+4.11. 	Use **Git command** push code to CodeCommit.
 		
 	$ git add .
 	$ git commit -m "First commit"
@@ -155,7 +157,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 5.23. 	Click **Create pipeline**.
 
-#### Config the CodeBuild buildspec.yml path
+### Config the CodeBuild buildspec.yml path
 
 6.1.  In AWS Manage Console, click service, click **CodeBuild**.
 
@@ -169,7 +171,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 6.6.  Click **Update**.
 
-#### Edit the CodeBuild IAM
+### Edit the CodeBuild IAM
 
 7.1. 	After you created pipeline, it will start running, but fail in build stage. You need to add some policies to access ECS resources.
 
@@ -190,7 +192,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 7.8. 	Back to AWS Codepipeline page, click **Retry**.
 
 
-#### Try to See First Deploy and Test First Change
+### Try to See First Deploy and Test First Change
 
 8.1. 	When all Stage Success, In AWS Manage Console, click service, and click **EC2**.
 
@@ -221,7 +223,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 ![26.png](/ECS-101-DevOps_with_Fargate/images/26.png)
 
 
-#### Try to Add Test Stage and Config CodeBuild
+### Try to Add Test Stage and Config CodeBuild
 
 9.1. 	Go back to CodePipeline page, and click **Edit**.
 
@@ -277,7 +279,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 * For this Test stage, it will run the code first before to build docker image, if code correct, it will continue run the pipeline, if code have the bug, the pipeline will stop at Test stage, this method can avoid build the bug docker images.
 
 
-#### Try Some Wrong Code
+### Appendix. Try Some Wrong Code
 
 10.1. 	In AWS Cloud9 IDE, try to make some bug in **app.py**.
 

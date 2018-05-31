@@ -46,7 +46,7 @@ Service With Fargate
 
 1.19. 	Click **Add container**.
 
-1.20. 	Type **sample-container** as Container name.
+1.20. 	Type **workshop-container** as Container name.
 
 1.21. 	Paste the **httpd** into Image field.
 
@@ -62,7 +62,7 @@ Service With Fargate
 
 1.26. 	Choose **Fargate** as Launch type.
 
-1.27. 	Type **sample-service** as the Service name.
+1.27. 	Type **workshop-service** as the Service name.
 
 1.28. 	In Number of tasks, enter **1**.
 
