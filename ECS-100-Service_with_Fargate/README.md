@@ -1,5 +1,8 @@
 Service With Fargate
 ================================================================
+## Prerequisites
+
+>Make sure your are in US East (N. Virginia), which short name is us-east-1.
 
 ## Lab tutorial
 ### Create a Cluster, Task Definition, and Service Using Fargate
