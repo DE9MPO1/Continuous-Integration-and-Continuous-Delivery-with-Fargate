@@ -8,4 +8,4 @@ Nowadays, many software can help you to make a DevOps flow. But you need to wast
 
 In this tutorial, we will use AWS Cloud9 to create and co-work environment, AWS codepipeline to create an automated deployment and integration pipeline, and finally deploy on [AWS Fargate](https://aws.amazon.com/fargate/) and [AWS ECS – EC2 Container](https://aws.amazon.com/ecs/) type. Following are the architecture of this tutorial:
 
-![architecture.png](/images/2.png)
+![architecture.png](/architecture.png)
