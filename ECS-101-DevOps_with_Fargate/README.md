@@ -193,10 +193,12 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 7.8. 	Back to AWS Codepipeline page, click **Retry** and **Conitune**.
 
+7.9 	When all Stage of pipeline Success deploy, go to next step, it will need a few minutes.
+
 
 ### Try to See First Deploy and Test First Change
 
-8.1. 	When all Stage Success, In AWS Manage Console, click service, and click **EC2**.
+8.1. 	In AWS Manage Console, click service, and click **EC2**.
 
 8.2. 	Click **Load Balancers** at left panel.
 
