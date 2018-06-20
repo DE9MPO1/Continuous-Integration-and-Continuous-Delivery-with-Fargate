@@ -13,5 +13,4 @@ After create Amazon ECS using Fargate type, we will code by using [AWS Cloud9](h
 
 Step by step:
 1. [Service_with_Fargate](https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate/tree/master/ECS-100-Service_with_Fargate)
-
 2. [DevOps_with_Fargate](https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate/tree/master/ECS-101-DevOps_with_Fargate)
