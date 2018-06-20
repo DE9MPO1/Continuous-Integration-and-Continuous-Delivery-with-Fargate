@@ -86,7 +86,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 4.6. 	Click **Done**.
 
-4.7. 	Note the **Repository** URI and copy it.
+4.7. 	Note the **Repository URI** and copy it.
 
 ![11.png](/ECS-101-DevOps_with_Fargate/images/11.png)
 
@@ -131,7 +131,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 5.11. 	Type **imagebuild** as Project name.
 
-5.12. 	Select Ubuntu at Operating system, select **Docker**, and select **aws/codebuild/docker:17.09.0**.
+5.12. 	Select **Ubuntu** at Operating system, select **Docker**, and select **aws/codebuild/docker:17.09.0**.
 
 ![20.png](/ECS-101-DevOps_with_Fargate/images/20.png)
 
@@ -153,9 +153,11 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 5.21. 	Click **Allow**.
 
-5.22. 	Click **Next step**.
+5.22. Choose **AWS-CodePipeline-Service** as Role name.
 
-5.23. 	Click **Create pipeline**.
+5.23. 	Click **Next step**.
+
+5.24. 	Click **Create pipeline**.
 
 ### Config the CodeBuild buildspec.yml path
 
@@ -189,7 +191,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 ![21.png](/ECS-101-DevOps_with_Fargate/images/21.png)
 
-7.8. 	Back to AWS Codepipeline page, click **Retry**.
+7.8. 	Back to AWS Codepipeline page, click **Retry** and **Conitune**.
 
 
 ### Try to See First Deploy and Test First Change
