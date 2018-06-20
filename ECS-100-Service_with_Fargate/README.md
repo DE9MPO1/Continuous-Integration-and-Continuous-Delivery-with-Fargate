@@ -55,7 +55,7 @@ Service With Fargate
 
 1.24. 	Click **Create**.
 
-1.25. 	Back to ECS page, click **Action**, and Select **Create Service**.
+1.25. 	Back to Task Definitions page, choose **workshop-task** you created previously, and click **Action**, and Select **Create Service**.
 
 ![14.png](/ECS-100-Service_with_Fargate/images/14.png)
 
