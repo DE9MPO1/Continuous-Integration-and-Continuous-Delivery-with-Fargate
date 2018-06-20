@@ -1,4 +1,4 @@
-Service With Fargate
+Service with Fargate
 ================================================================
 ## Lab tutorial
 ### Create a Cluster, Task Definition, and Service Using Fargate
