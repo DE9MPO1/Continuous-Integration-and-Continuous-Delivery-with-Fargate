@@ -1,4 +1,4 @@
-Continuous Integration and Continuous Delivery With Fargate/EC2 Container
+Continuous Integration and Continuous Delivery With Fargate
 ================================================================
 
 ## Scenario
