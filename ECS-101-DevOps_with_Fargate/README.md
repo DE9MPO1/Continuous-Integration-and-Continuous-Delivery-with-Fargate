@@ -218,6 +218,10 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 8.7. 	Save it and use **Git command** to push it to CodeCommit.
 
+	$ git add .
+	$ git commit -m "First commit"
+	$ git push
+
 8.8. 	When it push to CodeCommit successfully, it would trigger Codepipeline to automate integration and delivery, go back to CodePipeline page to see.
 
 8.9. 	When all stage success, reload the web page, and you can see the new version is deployed.
