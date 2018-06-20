@@ -11,5 +11,7 @@ In this tutorial, we will using [AWS Fargate](https://aws.amazon.com/fargate/) t
 
 After create Amazon ECS using Fargate type, we will code by using [AWS Cloud9](https://aws.amazon.com/cloud9/) which is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. Integrate AWS Cloud9 with [AWS CodeCommit](https://aws.amazon.com/codecommit/), use [AWS Codepipeline](https://aws.amazon.com/codepipeline/), [AWS CodeBuild](https://aws.amazon.com/codebuild/), and Amazon ECS to implement an automatic CI/CD workflow with Container.
 
-First step: [Create a Cluster, Task Definition, and Service Using Fargate](https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate/tree/master/ECS-100-Service_with_Fargate)
-Second
+Step by step:
+1. [Service_with_Fargate](https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate/tree/master/ECS-100-Service_with_Fargate)
+
+2. [DevOps_with_Fargate](https://github.com/ecloudvalley/Continuous-Integration-and-Continuous-Delivery-with-Fargate/tree/master/ECS-101-DevOps_with_Fargate)
