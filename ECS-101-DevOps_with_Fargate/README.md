@@ -285,7 +285,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 9.23. 	Wait all stage success, you can reload the web page to see new version.
 
-	>For this Test stage, it will run the code first before to build docker image, if code correct, it will continue run the pipeline, if code have the bug, the pipeline will stop at Test stage, this method can avoid build the bug docker images.
+>For this Test stage, it will run the code first before to build docker image, if code correct, it will continue run the pipeline, if code have the bug, the pipeline will stop at Test stage, this method can avoid build the bug docker images.
 
 
 ### Appendix. Try Some Wrong Code
