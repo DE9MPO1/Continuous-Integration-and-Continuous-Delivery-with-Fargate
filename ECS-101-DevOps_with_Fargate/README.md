@@ -8,7 +8,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 
 ## Prerequisites
-1. Sign-in a AWS account, and make sure you have select N.Virginia region.
+1. Sign-in an AWS account, and make sure you have selected N.Virginia region.
 
 
 
@@ -72,7 +72,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 3.4. 	Go to **AWS CodeCommit** page, and you will see source code are already push by bash script.
 
 
-### Create a ECR Repository
+### Create an ECR Repository
 
 4.1.    Back to ECS service page.
 
@@ -90,11 +90,11 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 ![11.png](/ECS-101-DevOps_with_Fargate/images/11.png)
 
-4.8. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder and replace the Repository URI.
+4.8. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** folder and replace the Repository URI.
 
 ![12.png](/ECS-101-DevOps_with_Fargate/images/12.png)
 
-4.9. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** floder, and replace the Container name to **workshop-container**.
+4.9. 	Go back to Cloud9 IDE, open **buildspec.yml** under **build** folder and replace the Container name to **workshop-container**.
 
 ![13.png](/ECS-101-DevOps_with_Fargate/images/13.png)
 
@@ -187,11 +187,11 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 7.6. 	Type **AmazonEC2ContainerRegistryPowerUser** in filter.
 
-7.7. 	Select it, and click **Attach policy**.
+7.7. 	Select it and click **Attach policy**.
 
 ![21.png](/ECS-101-DevOps_with_Fargate/images/21.png)
 
-7.8. 	Back to AWS Codepipeline page, click **Retry** and **Conitune**.
+7.8. 	Back to AWS Codepipeline page, click **Retry** and **Continue**.
 
 7.9 	When all Stage of pipeline Success deploy, go to next step, it will need a few minutes.
 
@@ -222,7 +222,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 	$ git commit -m "First commit"
 	$ git push
 
-8.8. 	When it push to CodeCommit successfully, it would trigger Codepipeline to automate integration and delivery, go back to CodePipeline page to see.
+8.8. 	When it pushes to CodeCommit successfully, it would trigger Codepipeline to automate integration and delivery, go back to CodePipeline page to see.
 
 8.9. 	When all stage success, reload the web page, and you can see the new version is deployed.
 
@@ -300,7 +300,7 @@ In this tutorial, we will use [AWS Cloud9](https://aws.amazon.com/tw/cloud9/) to
 
 10.5. 	Click the latest build history.
 
-10.6. 	At the Build logs, you can see the test process, and realize how it was fail.
+10.6. 	At the Build logs, you can see the test process, and realize how it was failed.
 
 ![31.png](/ECS-101-DevOps_with_Fargate/images/31.png)
 
